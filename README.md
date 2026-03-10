@@ -79,7 +79,7 @@ android {
     
     ...
     dependencies {
-      implementation 'net.blusalt:mnoverification:1.0-1'
+      implementation 'net.blusalt:mnoverification:1.0-2'
     }
     ...
 }
@@ -93,6 +93,8 @@ Add below to your progaurd.pro file if using progaurd or minify is enabled  `/an
 ```proguard
 -keep public class com.megvii.**{*;}
 -keep class net.blusalt.liveness_native.** { *; }
+-keep class net.blusalt.liveness_native.** { *; }
+-keep class net.blusalt.mnoverification.** { *; }
 ```
 
 Enable proguard in `/android/app/build.gradle` file like below.
